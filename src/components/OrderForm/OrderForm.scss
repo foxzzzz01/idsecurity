@@ -1,0 +1,183 @@
+@import '../../styles/variables';
+
+.order-form {
+  background-color: $color-bg-light;
+  border: 1px solid rgba($color-primary, 0.2);
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 550px;
+  margin: 40px auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+  @media (max-width: $breakpoint-laptop) {
+    margin: 30px auto;
+  }
+
+  @media (max-width: $breakpoint-mobile-wide) {
+    padding: 32px 24px;
+    max-width: 92%; 
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    padding: 24px 20px;
+    margin: 20px auto;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-align: center;
+    color: $color-text-main;
+
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 20px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    color: $color-text-muted;
+    text-align: center;
+    margin-bottom: 32px;
+
+    @media (max-width: $breakpoint-mobile) {
+      margin-bottom: 24px;
+      font-size: 13px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+  }
+
+  &__label {
+    font-size: 13px;
+    font-weight: 500;
+    color: $color-text-muted;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  &__input,
+  &__select {
+    background-color: $color-bg-dark;
+    color: $color-text-main;
+    border: 1px solid rgba($color-text-muted, 0.2);
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 15px;
+    transition: $transition-fast;
+    width: 100%;
+    outline: none;
+
+    &:focus {
+      border-color: $color-primary;
+      box-shadow: 0 0 0 2px rgba($color-primary, 0.2);
+    }
+
+    &--error {
+      border-color: #ef4444 !important;
+      background-color: rgba(239, 68, 68, 0.02) !important;
+      box-shadow: 0 0 8px rgba(239, 68, 68, 0.15) !important;
+      animation: orderFormShake 0.4s ease-in-out;
+    }
+  }
+
+  &__select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='m6 9 6 6 6-6'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 16px;
+    padding-right: 40px;
+  }
+
+  &__error-text {
+    color: #f87171;
+    font-size: 12px;
+    margin-top: 2px;
+    text-align: left;
+    font-weight: 500;
+  }
+
+  &__button {
+    background-color: $color-primary;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid $color-primary;
+    transition: $transition-fast;
+    margin-top: 10px;
+    outline: none;
+
+    @media (max-width: $breakpoint-mobile) {
+      padding: 12px;
+      font-size: 15px;
+    }
+
+    &:hover {
+      background-color: darken($color-primary, 8%);
+      border-color: darken($color-primary, 8%);
+      transform: translateY(-1px);
+      box-shadow: 0 5px 15px rgba($color-primary, 0.3);
+
+      @media (max-width: $breakpoint-mobile-wide) {
+        transform: none; 
+      }
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+
+    &:disabled {
+      background-color: rgba($color-text-muted, 0.3);
+      border-color: transparent;
+      color: rgba(#fff, 0.5);
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+  }
+
+  &__status {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 6px;
+
+    &--success {
+      color: $color-accent;
+      background-color: rgba($color-accent, 0.08);
+      border: 1px solid rgba($color-accent, 0.2);
+    }
+
+    &--error {
+      color: #ef4444;
+      background-color: rgba(239, 68, 68, 0.08);
+      border: 1px solid rgba(239, 68, 68, 0.2);
+    }
+  }
+}
+
+@keyframes orderFormShake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-4px); }
+  40%, 80% { transform: translateX(4px); }
+}

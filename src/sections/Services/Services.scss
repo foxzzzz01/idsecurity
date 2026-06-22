@@ -1,0 +1,257 @@
+@import '../../styles/variables';
+
+.services {
+  padding: 110px 0;
+  background-color: darken($color-bg-dark, 2.5%);
+  overflow: hidden;
+
+  @media (max-width: $breakpoint-mobile-wide) {
+    padding: 60px 0;
+  }
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @media (max-width: $breakpoint-mobile-wide) {
+      padding: 0 16px;
+    }
+
+    .services__title,
+    .services__subtitle,
+    .services__card,
+    .services__repair-banner {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1),
+                  transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    &--animate {
+      .services__title { opacity: 1; transform: translateY(0); }
+      .services__subtitle { opacity: 1; transform: translateY(0); transition-delay: 0.15s; }
+      
+      @for $i from 1 through 6 {
+        .services__card:nth-child(#{$i}) {
+          transition-delay: 0.15s + ($i * 0.1s);
+        }
+      }
+
+      .services__card { opacity: 1; transform: translateY(0); }
+      .services__repair-banner { opacity: 1; transform: translateY(0); transition-delay: 0.6s; }
+    }
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 14px;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+
+    @media (max-width: $breakpoint-mobile-wide) {
+      font-size: 30px;
+    }
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 24px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    color: $color-text-muted;
+    text-align: center;
+    max-width: 740px;
+    margin: 0 auto 70px auto;
+    line-height: 1.65;
+
+    @media (max-width: $breakpoint-mobile-wide) {
+      margin-bottom: 40px;
+      font-size: 14px;
+    }
+
+    strong {
+      color: lighten($color-primary, 15%);
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 50px;
+
+    @media (max-width: $breakpoint-laptop) {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+
+    @media (max-width: $breakpoint-mobile-wide) {
+      grid-template-columns: 1fr; 
+      gap: 20px;
+    }
+  }
+
+  &__card {
+    position: relative;
+    background: rgba($color-bg-light, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    padding: 36px;
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+
+    @media (max-width: $breakpoint-mobile) {
+      padding: 24px;
+    }
+
+    &:hover {
+      background: rgba($color-bg-light, 0.75);
+      border-color: rgba($color-primary, 0.4);
+      transform: translateY(-6px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+
+      @media (max-width: $breakpoint-mobile-wide) {
+        transform: none; 
+      }
+
+      .services__card-glow { opacity: 1; }
+
+      .services__card-icon-wrapper {
+        background-color: $color-primary;
+        color: #fff;
+        box-shadow: 0 0 20px rgba($color-primary, 0.45);
+        transform: scale(1.05);
+      }
+    }
+
+    &-glow {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 15% 15%, rgba($color-primary, 0.12) 0%, transparent 60%);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      pointer-events: none;
+    }
+
+    &-icon-wrapper {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      background-color: rgba(#000, 0.2);
+      color: $color-primary;
+      border-radius: 12px;
+      margin-bottom: 26px;
+      border: 1px solid rgba($color-primary, 0.15);
+      transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+
+      @media (max-width: $breakpoint-mobile) {
+        margin-bottom: 16px;
+      }
+    }
+
+    &-title {
+      font-size: 21px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: #ffffff;
+      letter-spacing: -0.3px;
+
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 18px;
+        margin-bottom: 8px;
+      }
+    }
+
+    &-desc {
+      font-size: 14px;
+      color: $color-text-muted;
+      line-height: 1.6;
+    }
+  }
+
+  &__repair-banner {
+    display: flex;
+    gap: 30px;
+    background: linear-gradient(135deg, rgba($color-bg-light, 0.5) 0%, rgba($color-bg-light, 0.1) 100%);
+    border: 1px solid rgba($color-primary, 0.25);
+    border-radius: 20px;
+    padding: 36px;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+    @media (max-width: $breakpoint-tablet) {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px 24px;
+      gap: 20px;
+    }
+  }
+
+  &__repair-icon-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  &__repair-icon {
+    background-color: rgba($color-primary, 0.12);
+    color: $color-primary;
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba($color-primary, 0.25);
+    z-index: 2;
+  }
+
+  &__repair-pulse {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+    background-color: rgba($color-primary, 0.25);
+    z-index: 1;
+    animation: repairGlowPulse 2.5s infinite ease-in-out;
+  }
+
+  &__repair-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 10px;
+    letter-spacing: -0.3px;
+
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 19px;
+    }
+  }
+
+  &__repair-text {
+    font-size: 15px;
+    color: rgba($color-text-main, 0.75);
+    line-height: 1.65;
+
+    strong {
+      color: $color-accent;
+    }
+  }
+}
+
+@keyframes repairGlowPulse {
+  0% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.25); opacity: 0; }
+  100% { transform: scale(1); opacity: 0; }
+}

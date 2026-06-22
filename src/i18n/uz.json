@@ -1,0 +1,114 @@
+{
+  "menu": {
+    "services": "Xizmatlar",
+    "about": "Kompaniya haqida",
+    "clients": "Mijozlar",
+    "contacts": "Aloqa",
+    "btnContact": "Bogʻlanish"
+  },
+  "footer": {
+    "desc": "Tijorat va xususiy obyektlar uchun har qanday murakkablikdagi kuchsiz tok tizimlari, SXT va videokuzatuvni professional loyihalash hamda montaj qilish.",
+    "services": "Xizmatlar",
+    "contacts": "Kontaktlar",
+    "address": "Toshkent sh., Yakkasaroy tumani, 3-Qoraqum koʻchasi, 12",
+    "rights": "Barcha huquqlar himoyalangan."
+  },
+  "form": {
+    "title": "Loyiha qiymatini hisoblash",
+    "subtitle": "Soʻrov qoldiring va biz 15 daqiqa ichida siz bilan bogʻlanamiz",
+    "labelName": "Ismingiz*",
+    "placeholderName": "Ivan",
+    "labelPhone": "Telefon raqamingiz*",
+    "placeholderPhone": "+998 (99) 000-00-00",
+    "labelObjectType": "Obyekt turi",
+    "labelService": "Asosiy xizmat",
+    "btnSubmit": "Soʻrov yuborish",
+    "btnLoading": "Yuborilmoqda...",
+    "errorName": "Iltimos, ismingizni kiriting",
+    "errorPhoneEmpty": "Iltimos, telefon raqamingizni kiriting",
+    "errorPhoneInvalid": "Toʻgʻri raqam kiriting (faqat raqamlar, 9 yoki 12 ta belgi)",
+    "statusSuccess": "Soʻrov muvaffaqiyatli yuborildi!",
+    "statusError": "Yuborishda xatolik yuz berdi. Keyinroq qayta urinib koʻring.",
+    "objects": {
+      "office": "Ofis / Biznes-markaz",
+      "sklad": "Omborxona / Ishlab chiqarish",
+      "home": "Hovli uy / Kvartira",
+      "shop": "Doʻkon / Riteyl"
+    },
+    "services": {
+      "cctv": "Videokuzatuv",
+      "skud": "Kirishni boshqarish (SXT)",
+      "fire": "Yongʻin xavfsizligi",
+      "anti-theft": "Antioʻgʻrilik tizimlari",
+      "servers": "Server uskunalari",
+      "network": "Tarmoq uskunalari"
+    }
+  },
+  "about": {
+    "badge": "Kompaniya haqida",
+    "title": "Xavfsizlik sohasida ishonchli hamkor",
+    "text1": "ID SECURITY jamoasi koʻp yillik tajribaga ega sertifikatlangan muhandislar va malakali mutaxassislardan iborat. Biz shunchaki texnikani oʻrnatmaymiz — biz jahon brendlarining faqat tekshirilgan va sifatli uskunalaridan foydalangan holda kompleks xavfsizlik ekotizimlarini loyihalashtiramiz.",
+    "text2": "Har bir obyekt biz uchun noyobdir. Biz korxonaning arxitekturasini batafsil oʻrganamiz, videokuzatuvdagi «koʻrinmas zonalar» va SXTdagi zaifliklarni bartaraf etamiz, tarmoqlar hamda yongʻin xavfsizligi tizimlarining benuqson ishlashini kafolatlaymiz.",
+    "promoTitle": "Oʻlchash uchun borish — 0 soʻm",
+    "promoDesc": "Toshkent shahri va Toshkent viloyati boʻylab obyektni tahlil qilish uchun mutaxassisning mutlaqo bepul tashrifi.",
+    "card1Number": "10+ yil",
+    "card1Title": "Bozordagi tajriba",
+    "card1Desc": "Oʻn yildan ortiq vaqt davomida har qanday murakkablikdagi kuchsiz tok tizimlarini loyihalashtirib, joriy etib kelmoqdamiz.",
+    "card2Number": "5000+",
+    "card2Title": "Tayyor obyektlar",
+    "card2Desc": "Muvaffaqiyatli himoyalangan korxonalar, ofislar, omborlar va xususiy qarorgohlar.",
+    "card3Number": "1 yil",
+    "card3Title": "Toʻliq kafolat",
+    "card3Desc": "Barcha oʻrnatilgan uskunalar va bajarilgan ishlar uchun 12 oylik mustahkam kafolat."
+  },
+  "clients": {
+    "badge": "Yetakchilar ishonchi",
+    "title": "Bizga oʻz bizneslarini ishonishadi",
+    "subtitle": "Biz yirik tijorat obyektlari, ishlab chiqarish korxonalari va iqtisodiyotning strategik tarmoqlarining kompleks xavfsizligini taʼminlaymiz."
+  },
+  "hero": {
+    "badge": "Biznes va uy uchun kompleks xavfsizlik",
+    "titleMain": "Muhandislik tizimlarini",
+    "titleAccent": "loyihalash va montaj qilish",
+    "subtitle": "Videokuzatuv, kirishni boshqarish (SXT), yongʻin xavfsizligi va tarmoq uskunalarini 12 oygacha kafolat bilan kalit ostida oʻrnatish.",
+    "btnCta": "Narxini hisoblash",
+    "btnSecondary": "Xizmatlarimiz"
+  },
+  "services": {
+    "title": "Faoliyat yoʻnalishlari",
+    "subtitle": "Muhandislik ishlarining toʻliq majmuasini bajaramiz:",
+    "subtitleStrong": "loyihalash, montaj, sozlash, texnik xizmat koʻrsatish va demontaj qilish",
+    "repairTitle": "Tizim oʻrnatilgan, ammo nosozliklar bilan ishlayaptimi?",
+    "repairText": "Agar uskunangiz boshqa pudratchilar tomonidan oʻrnatilgan boʻlsa va muammolar yuzaga kelgan boʻlsa, ID SECURITY jamoasi yordamga tayyor. Biz ekspert auditini oʻtkazamiz, montaj yoki sozlashdagi xatolarni aniqlaymiz, nosozliklarni tezda bartaraf etamiz va obyektingizni texnik xizmatga olamiz.",
+    "items": {
+      "cctvTitle": "Videokuzatuv",
+      "cctvDesc": "IP va analogik kuzatuv, yuzlar va avtoraqamlarning intellektual tahlili, masofaviy kirish. Loyihalashdan tortib montaj va sozlashgacha boʻlgan toʻliq sikl.",
+      "skudTitle": "Kirishni boshqarish (SXT)",
+      "skudDesc": "Kirish nazorati, turniketlar, biometrik identifikatsiya, ish vaqtini hisobga olish. Oʻtish sxemalarini loyihalash, integratsiya va texnik xizmat.",
+      "fireTitle": "Yongʻin xavfsizligi",
+      "fireDesc": "Yongʻindan ogohlantirish loyihalarini ishlab chiqish, xabar berish va evakuatsiya tizimlarini montaj qilish, rejaviy texnik xizmat koʻrsatish.",
+      "antiTheftTitle": "Antioʻgʻrilik tizimlari",
+      "antiTheftDesc": "Riteylda mahsulotlarni himoya qilish: radiochastotali va akustomagnit eshiklarni oʻrnatish, datchiklarni tanlash, sozlash va eski tizimlarni demontaj qilish.",
+      "serversTitle": "Server uskunalari",
+      "serversDesc": "Server xonalarini loyihalash, stoykalarni yigʻish, maʼlumotlarni saqlashning nosozlikka chidamli tizimlari (NAS/SAN) va keyingi texnik koʻmak.",
+      "networkTitle": "Tarmoq uskunalari",
+      "networkDesc": "MTS (SCS) montaji, korxonalar uchun uzluksiz Wi-Fi tashkil etish, boshqariladigan kommutator va marshrutizatorlarni professional sozlash."
+    }
+  },
+  "workflow": {
+    "title": "Biz bilan ishlash bosqichlari",
+    "subtitle": "Loyihaingizni birinchi aloqadan tortib topshirgacha boʻlgan shaffof va tizimli amalga oshirish jarayoni",
+    "steps": {
+      "step1Title": "Soʻrov qoldirish",
+      "step1Desc": "Siz saytda soʻrov qoldirasiz yoki biz bilan telefon orqali bogʻlanasiz.",
+      "step2Title": "Muhandis tashrifi",
+      "step2Desc": "Mutaxassis 24 soat ichida batafsil oʻlchov ishlarini oʻtkazish uchun obyektga bepul yetib boradi.",
+      "step3Title": "Loyiha va Smeta",
+      "step3Desc": "Xavfsizlik tizimining individual loyihasini ishlab chiqamiz va aniq smetani hisoblaymiz.",
+      "step4Title": "Shartnoma",
+      "step4Desc": "Tafsilotlarni kelishib olamiz, yakuniy qiymatni belgilaymiz va rasmiy shartnoma imzolaymiz.",
+      "step5Title": "Amalga oshirish",
+      "step5Desc": "Uskunalarni sifatli montaj qilamiz, sozlaymiz va obyektni foydalanishga topshiramiz."
+    }
+  }
+}

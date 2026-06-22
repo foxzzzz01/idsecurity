@@ -1,0 +1,29 @@
+
+$color-bg-dark: #0f172a;   
+$color-bg-light: #1e293b;   
+$color-accent: #10b981;     
+$color-text-main: #f8fafc;  
+$color-text-muted: #94a3b8; 
+$color-primary: #829ed1;
+
+
+$font-main: 'Inter', sans-serif;
+$transition-fast: all 0.3s ease;
+
+
+$transition-lang-hide: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
+$transition-lang-show: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+$breakpoint-desktop: 1440px;
+$breakpoint-laptop: 1200px;
+$breakpoint-tablet: 992px;
+$breakpoint-mobile-wide: 768px;
+$breakpoint-mobile: 480px;

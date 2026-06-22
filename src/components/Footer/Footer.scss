@@ -1,0 +1,143 @@
+@import '../../styles/variables';
+
+.footer {
+  background-color: #0b0f19;
+  border-top: 1px solid rgba($color-text-muted, 0.1);
+  padding-top: 60px;
+
+  @media (max-width: $breakpoint-mobile-wide) {
+    padding-top: 40px;
+  }
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 40px 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+
+    @media (max-width: $breakpoint-tablet) {
+      grid-template-columns: 1.5fr 1fr 1fr; 
+      gap: 30px;
+    }
+
+    @media (max-width: $breakpoint-mobile-wide) {
+      grid-template-columns: 1fr; 
+      gap: 32px;
+      padding: 0 16px 32px 16px;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &-icon {
+      color: $color-primary;
+    }
+
+    &-text {
+      font-size: 18px;
+      font-weight: 700;
+
+      &--accent {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__description {
+    font-size: 14px;
+    color: $color-text-muted;
+    line-height: 1.6;
+    max-width: 400px;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: $color-text-main;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+
+    @media (max-width: $breakpoint-mobile-wide) {
+      margin-bottom: 0; 
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &--contacts {
+      li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: $color-text-muted;
+        font-size: 14px;
+
+        svg {
+          color: $color-primary;
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    color: $color-text-muted;
+    transition: $transition-fast;
+
+    &:hover {
+      color: $color-primary;
+      padding-left: 4px;
+
+      @media (max-width: $breakpoint-mobile-wide) {
+        padding-left: 0; 
+      }
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid rgba($color-text-muted, 0.05);
+    padding: 24px 20px;
+    background-color: #080b12;
+
+    @media (max-width: $breakpoint-mobile-wide) {
+      padding: 20px 16px;
+    }
+
+    &-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      color: rgba($color-text-muted, 0.7);
+
+      @media (max-width: $breakpoint-mobile) {
+        flex-direction: column; 
+        gap: 12px;
+        text-align: center;
+      }
+    }
+  }
+
+  &__dev-accent {
+    color: $color-primary;
+  }
+}

@@ -1,0 +1,41 @@
+@import 'variables';
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-bg-dark;
+  color: $color-text-main;
+  font-family: $font-main;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button, input, select {
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
+
+h1, h2, h3, h4, p, span, strong, a, button, img, .workflow__connector {
+  transition: $transition-lang-show;
+}
+
+body.lang-changing {
+  h1, h2, h3, h4, p, span, strong, a, button, img, .workflow__connector {
+    opacity: 0 !important;
+    transform: translateY(2px); 
+    transition: $transition-lang-hide !important; 
+  }
+}
